@@ -6,15 +6,28 @@
     android:layout_height="match_parent"
     android:background="@color/design_default_color_primary"
 
-tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
 
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hunger Games APP"
-        android:gravity="center"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal"
+        android:text="@string/welcome"
         android:textColor="#ffff"
         android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="239dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/bmi"
+        android:src="@drawable/ic_bmi"
+        app:srcCompat="@drawable/ic_bmi"
+        android:visibility="visible" />
 
 </LinearLayout>

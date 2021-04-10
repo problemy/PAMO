@@ -2,15 +2,16 @@ package com.example.bmicalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
-    EditText weight, height;
+    private static EditText weight, height;
     TextView resulttext;
-    String calculation, BMIresult;
+    private static String calculation, BMIresult;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,5 +49,20 @@ public class HomeActivity extends AppCompatActivity {
         calculation = "Result:\n" +bmi+ "\n" +BMIresult;
 
         resulttext.setText(calculation);
+    }
+    public static EditText getWeight(){
+        return weight;
+    }
+    public static EditText getHeight(){
+        return height;
+    }
+    public static String getBMIresult(){
+        return BMIresult;
+    }
+
+    public void gotoBMRcalculator(View view) {
+        Intent BMRIntent = new Intent(HomeActivity.this, BmrCalculator.class);
+        startActivity(BMRIntent);
+
     }
 }

@@ -21,7 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:ems="6"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:inputType="phone" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,7 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:ems="6"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:inputType="phone" />
 
     <Button
         android:id="@+id/calculator"
@@ -54,4 +56,13 @@
         android:text="Result"
         android:textSize="20dp"
         android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/bmrcalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMR Calculator"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="gotoBMRcalculator"/>
 </LinearLayout>
