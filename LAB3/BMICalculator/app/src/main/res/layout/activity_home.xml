@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/weight"
+        android:textSize="30dp"
+        android:layout_marginTop="80dp"
+       />
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="6"
+        android:textAlignment="center"
+        android:inputType="phone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/height"
+        android:textSize="30dp"
+        android:layout_marginTop="40dp" />
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="6"
+        android:textAlignment="center"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_bmi"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="calculateBMI"/>
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/result"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/bmrcalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bmr_calculator"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="gotoBMRcalculator"/>
+    <Button
+        android:id="@+id/quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Quizz"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="gotoQuiz"/>
+</LinearLayout>
